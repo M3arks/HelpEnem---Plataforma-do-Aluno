@@ -17,7 +17,7 @@
       <!--=============== HEADER ===============-->
       <header class="header" id="header">
          <div class="header__container">
-            <a href="#" class="header__logo">
+            <a href="Dashboard.html" class="header__logo">
                <img src="../../Assets/Imagens/Imagem_Color_1.png" alt="Logo" class="nav_logo-img">
                <span>HelpEnem</span>
             </a>
@@ -72,26 +72,35 @@
                      </a>
 
                      <a href="#" class="sidebar__link">
-                        <i class="fi fi-sr-chart-pie-alt"></i>
+                        <i class="fi fi-sr-calendar-lines-pen"></i>
+                        <span>Cronograma</span>
+                     </a>
+
+                       <a href="#" class="sidebar__link">
+                         <i class="fi fi-sr-comment"></i>
                         <span>Estatísticas</span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <div>
+               <div class="sidebar__list">
+                     <a href="#" class="sidebar__link">
+                       <i class="fi fi-sr-settings"></i>
+                        <span>Configurações</span>
+                     </a>
+
+                     <a href="#" class="sidebar__link">
+                         <i class="fi fi-sr-apps"></i>
+                        <span>Portal do Aluno</span>
                      </a>
 
                       <a href="#" class="sidebar__link">
                          <i class="fi fi-sr-comment"></i>
                         <span>Comunidade</span>
                      </a>
-
-                      <a href="#" class="sidebar__link">
-                         <i class="fi fi-sr-apps"></i>
-                        <span>Portal do Aluno</span>
-                     </a>
-
-                     <a href="#" class="sidebar__link">
-                         <i class="fi fi-sr-settings"></i>
-                        <span>Configurações</span>
-                     </a>
                   </div>
-               </div>
             </div>
 
             <div class="sidebar__actions">
@@ -111,7 +120,33 @@
 
       <!--=============== MAIN ===============-->
       <main class="main container" id="main">
-         <h1>Novidades</h1>
+         <h1>Bem-vindo de volta, Rix!</h1>
+         <p>Spoiler do seu futuro: aprovado! Mas só se continuar firme. Vamos nessa?</p>
+
+         <section class="overview">
+            <div class="card">
+               <h3>Progresso Geral</h3>
+               <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
+               <p>65% do cronograma concluído</p>
+            </div>
+
+            <div class="card">
+               <h3>Próxima Aula</h3>
+               <p style="margin-bottom: 0.5rem;">Matemática: Funções do 1º Grau</p>
+               <span>25/08/2025 às 07:00 Horas</span>
+            </div>
+
+            <div class="card">
+               <h3>Próxima Avaliação</h3>
+               <p style="margin-bottom: 0.5rem;">Linguagens, Códigos e suas Tecnologias</p>
+               <span>09/11/2025 às 13:00 Horas</span>
+            </div>
+
+            <div class="card">
+               <h2>Faltam <span id="daysLeft"></span> dias para o ENEM!</h2>
+               <p style="margin-top: 0.8rem;">Aproveite cada dia para se aproximar da sua aprovação. <br> Organize seu cronograma, revise conteúdos e pratique redações. Você ainda tem tempo — foco e consistência fazem toda a diferença!</p>
+            </div>
+         </section>
       </main>
 
       <!--=============== LOADING SCREEN ===============-->
@@ -126,5 +161,12 @@
 
       <!--=============== MAIN JS ===============-->
       <script src="main.js"></script>
+
+      <script>
+         const examDate = new Date("2025-11-09T13:00:00");
+         const today = new Date();
+         const diff = Math.ceil((examDate - today) / (1000 * 60 * 60 * 24));
+         document.getElementById("daysLeft").innerText = diff;
+      </script>
    </body>
 </html>
