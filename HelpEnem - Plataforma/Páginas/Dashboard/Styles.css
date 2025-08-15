@@ -6,7 +6,7 @@
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
+
   --first-color: #8d68bc;
   --title-color: hsl(228, 18%, 16%);
   --text-color: #333;
@@ -14,7 +14,6 @@
   --shadow-color: hsla(228, 80%, 4%, .1);
 
   /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Nunito Sans", system-ui;
   --normal-font-size: .938rem;
   --smaller-font-size: .75rem;
@@ -68,11 +67,11 @@ button {
 
 /*=============== VARIABLES DARK THEME ===============*/
 body.dark-theme {
-  --first-color: hsl(228, 70%, 63%);
+  --first-color: #8d68bc;
   --title-color: hsl(228, 18%, 96%);
-  --text-color: hsl(228, 12%, 61%);
-  --body-color: #f1f1f1a8;
-  --shadow-color: hsla(228, 80%, 4%, .3);
+  --text-color: hsl(0, 0%, 100%);
+  --body-color: #272727;
+  --shadow-color: #000000c9;
 }
 
 /*========== 
@@ -389,6 +388,76 @@ p {
   background: #8d68bc;
   border-radius: 5px;
 }
+
+/* ## Conteúdos Recomendados ## */
+
+.card-container {
+   display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-course {
+  background: var(--body-color);
+  flex: 1 1 30%;
+  padding: 1.75rem;
+  height: 23.6rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 24px var(--shadow-color);
+}
+
+.card-image {
+  position: relative;
+  height: 200px;
+  background-size: cover;
+  border-radius: 1rem;
+  background-position: center;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #be97e9;
+  color: white;
+  font-weight: 700;
+  padding: 5px 15px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.card-content {
+  padding-top: 10px;
+}
+
+.course-title {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 20px;
+  padding-top: 5px;
+  font-weight: bold;
+}
+
+.course-tag {
+  margin-bottom: 10px;
+  color: #7451a6;
+  font-weight: 600;
+}
+
+.details-btn {
+  color: #fff;
+  font-weight: 700;
+  background: #8d68bc;
+  padding: 10px 25px;
+  border-radius: .5rem;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+}
+
+.details-btn:hover {
+  background-color: #7451a6;
+}
+
 
 /* |-|-|-|-|-|-|-|-|-|- Loading Screen -|-|-|-|-|-|-|-|-|-| */
 

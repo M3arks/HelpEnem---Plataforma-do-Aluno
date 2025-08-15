@@ -6,7 +6,7 @@
 
 body {
   display: flex;
-  background-color: #fff;
+  background-color: #f1f1f157;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -67,7 +67,7 @@ button:focus {
 }
 
 form {
-  background-color: #fff;
+  background-color: #f1f1f157;
   display: flex;
   align-items: center;
   justify-content: center;

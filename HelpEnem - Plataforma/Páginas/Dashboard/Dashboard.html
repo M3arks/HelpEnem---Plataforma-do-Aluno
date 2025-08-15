@@ -10,11 +10,15 @@
 
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="Cronograma.css">
 
       <title>HelpEnem - Plataforma do Aluno</title>
    </head>
+
    <body>
-      <!--=============== HEADER ===============-->
+
+      <!--## Header ##-->
+
       <header class="header" id="header">
          <div class="header__container">
             <a href="Dashboard.html" class="header__logo">
@@ -28,7 +32,8 @@
          </div>
       </header>
 
-      <!--=============== SIDEBAR ===============-->
+      <!--## SideBar ##-->
+
       <nav class="sidebar" id="sidebar">
          <div class="sidebar__container">
             <div class="sidebar__user">
@@ -71,39 +76,40 @@
                         <span>Questões</span>
                      </a>
 
-                     <a href="#" class="sidebar__link">
+                     <a href="#Cronograma" class="sidebar__link">
                         <i class="fi fi-sr-calendar-lines-pen"></i>
                         <span>Cronograma</span>
                      </a>
 
+                     <a href="#Cronograma" class="sidebar__link">
+                        <i class="fi fi-sr-document"></i>
+                        <span>Provas Anteriores</span>
+                     </a>
+
                        <a href="#" class="sidebar__link">
-                         <i class="fi fi-sr-comment"></i>
+                         <i class="fi fi-sr-chart-pie-alt"></i>
                         <span>Estatísticas</span>
+                     </a>
+
+                      <a href="#" class="sidebar__link">
+                         <i class="fi fi-sr-comment-alt"></i>
+                        <span>Comunidade</span>
                      </a>
                   </div>
                </div>
             </div>
 
-            <div>
-               <div class="sidebar__list">
-                     <a href="#" class="sidebar__link">
-                       <i class="fi fi-sr-settings"></i>
-                        <span>Configurações</span>
-                     </a>
-
-                     <a href="#" class="sidebar__link">
-                         <i class="fi fi-sr-apps"></i>
-                        <span>Portal do Aluno</span>
-                     </a>
-
-                      <a href="#" class="sidebar__link">
-                         <i class="fi fi-sr-comment"></i>
-                        <span>Comunidade</span>
-                     </a>
-                  </div>
-            </div>
-
             <div class="sidebar__actions">
+                 <a href="#" class="sidebar__link">
+                     <i class="fi fi-sr-apps"></i>
+                     <span>Portal do Aluno</span>
+                  </a>
+
+               <a href="#" class="sidebar__link">
+                  <i class="fi fi-sr-settings"></i>
+                  <span>Configurações</span>
+               </a>
+
                <button>
                   <i class="ri-moon-clear-fill sidebar__link sidebar__theme" id="theme-button">
                      <span>Tema</span>
@@ -118,7 +124,8 @@
          </div>
       </nav>
 
-      <!--=============== MAIN ===============-->
+      <!--## Main ##-->
+   
       <main class="main container" id="main">
          <h1>Bem-vindo de volta, Rix!</h1>
          <p>Spoiler do seu futuro: aprovado! Mas só se continuar firme. Vamos nessa?</p>
@@ -147,9 +154,48 @@
                <p style="margin-top: 0.8rem;">Aproveite cada dia para se aproximar da sua aprovação. <br> Organize seu cronograma, revise conteúdos e pratique redações. Você ainda tem tempo — foco e consistência fazem toda a diferença!</p>
             </div>
          </section>
-      </main>
 
-      <!--=============== LOADING SCREEN ===============-->
+         <div class="card-container">
+            <div class="card-course">
+               <div class="card-image" style="background-image: url('../../Assets/Imagens/História.png');">
+                  <div class="badge">COMPLEMENTAR</div>
+               </div>
+
+               <div class="card-content">
+                  <div class="course-title">Tudo Sobre História</div>
+                  <p class="course-tag">Enem | Vestibulares | Ensino Médio</p>
+                  <button class="details-btn">Assistir Agora</button>
+               </div>
+            </div>
+
+            <div class="card">
+               <div class="card-image" style="background-image: url('../../Assets/Imagens/Biologia.png');">
+                  <div class="badge">REGULAR</div>
+               </div>
+
+               <div class="card-content">
+                  <div class="course-title">Biologia</div>
+                  <p class="course-tag">Enem | Vestibulares | Ensino Médio</p>
+                  <button class="details-btn">Assistir Agora</button>
+               </div>
+            </div>
+
+            <div class="card">
+               <div class="card-image" style="background-image: url('../../Assets/Imagens/Matemática.png');">
+                  <div class="badge">COMPLEMENTAR</div>
+               </div>
+
+               <div class="card-content">
+                  <div class="course-title">Ensinando Matemática</div>
+                  <p class="course-tag">Enem | Vestibulares | Ensino Médio</p>
+                  <button class="details-btn">Assistir Agora</button>
+               </div>
+            </div>
+         </div>
+
+      </main> 
+
+      <!--## Loading Screen ##-->
 
       <div id="LoadingScreen" class="screen">
          <div class="loader">
@@ -159,7 +205,8 @@
          </div>
       </div>
 
-      <!--=============== MAIN JS ===============-->
+      <!--## Main Script ##-->
+
       <script src="main.js"></script>
 
       <script>
